@@ -5,60 +5,79 @@
         <link rel="stylesheet" href="main.css"/>
     </head>
     <body class="main">
-        <div class="index">
-            <div class="cima">Home</div>
-            <div class="cima">Sobre</div>
-            <div class="cima">Contato</div>
-            <div class="cima">Saiba mais</div>
+        <div class="content">
+            <div id="index" class="index">
+                <a class="cima" style="text-decoration:none" href="#title">Home</a>
+                <a class="cima" style="text-decoration:none" href="#sobre">Sobre</a>
+                <a class="cima" style="text-decoration:none" href="#contato">Contato</a>
+                <a class="cima" style="text-decoration:none" href="#saibamais">Saiba mais</a>
+            </div>
+            <h1 id="title" class="title" style="font-size: 70px;">6 melhores noticias sobre COVID-19</h1>
+            <ul id="sobre">
+                <li class="item">
+                    <a href="https://www.bbc.com/portuguese/internacional-51682790">
+                        <header>
+                            <img src="img/trees.png"/>
+                        </header>
+                        <p>[ MEIO AMBIENTE ] Como epidemia de coronavírus pode ter efeito positivo no meio ambiente.</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.estudeseg.com.br/noticia/detalhe/179--coronavirus-por-que-e-tao-importante-ficar-em-casa-neste-momento">
+                        <header>
+                            <img src="img/stay-home.png"/>
+                        </header>
+                        <p>[Coronavírus] Por que é tão importante ficar em casa neste momento?
+                            A medida visa conter o avanço da doença no país.</p>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://g1.globo.com/ce/ceara/noticia/2020/04/15/plataforma-cearense-de-apoio-a-pequenos-e-medios-comerciantes-na-pandemia-ja-atende-a-sete-estados.ghtml">
+                        <header>
+                            <img src="img/pharmacy.png"/>
+                        </header>
+                        <p>Plataforma cearense de apoio a pequenos e médios comerciantes na pandemia já atende a sete estados.</p>
+                    </a>
+                </li><li class="item">
+                    <a href="https://www.letras.mus.br/blog/lives-da-semana/">
+                        <header>
+                            <img src="img/smartphone.png"/>
+                        </header>
+                        <p>Entretenimento: lives da semana - confira a agenda de shows para assistir em casa.</p>
+                    </a>
+                </li><li class="item">
+                    <a href="https://revistagalileu.globo.com/Tecnologia/noticia/2020/04/startups-brasileiras-desenvolvem-sistema-que-detecta-febre-distancia.html">
+                        <header>
+                            <img src="img/family.png"/>
+                        </header>
+                        <p>Startups brasileiras desenvolvem sistema que detecta febre a distância.</p>
+                    </a>
+                </li><li class="item">
+                    <a href="https://saude.abril.com.br/medicina/remedios-promissores-coronavirus-oms/">
+                        <header>
+                            <img src="img/seclusion.png"/>
+                        </header>
+                        <p>Remédios promissores contra o coronavírus são testados pela OMS.</p>
+                    </a>
+                </li>
+            </ul>
+            <div class="divForm">
+                <a id="contato">Contato</a>
+                <form class="form" action="/action_page.php">
+                    <input type="text" style="text-align:center" id="nome" name="nome" placeholder="Nome" value="">
+                    <input type="text" style="text-align:center" id="email" name="email" placeholder="E-mail" value="">
+                    <input type="text" style="text-align:center" id="mensagem" name="mensagem" placeholder="Mensagem" value="">
+                    <input type="submit" value="Enviar">
+                </form> 
+            </div>
+            <div class="push"></div>
         </div>
-        <h1 class="title">6 melhores noticias sobre COVID-19</h1>
-        <ul>
-            <li class="item">
-                <a href="https://www.bbc.com/portuguese/internacional-51682790">
-                    <header>
-                        <img src="img/trees.png"/>
-                    </header>
-                    <p>[ MEIO AMBIENTE ] Como epidemia de coronavírus pode ter efeito positivo no meio ambiente.</p>
-                </a>
-            </li>
-            <li class="item">
-                <a href="https://www.estudeseg.com.br/noticia/detalhe/179--coronavirus-por-que-e-tao-importante-ficar-em-casa-neste-momento">
-                    <header>
-                        <img src="img/stay-home.png"/>
-                    </header>
-                    <p>[Coronavírus] Por que é tão importante ficar em casa neste momento?
-                        A medida visa conter o avanço da doença no país.</p>
-                </a>
-            </li>
-            <li class="item">
-                <a href="https://g1.globo.com/ce/ceara/noticia/2020/04/15/plataforma-cearense-de-apoio-a-pequenos-e-medios-comerciantes-na-pandemia-ja-atende-a-sete-estados.ghtml">
-                    <header>
-                        <img src="img/pharmacy.png"/>
-                    </header>
-                    <p>Plataforma cearense de apoio a pequenos e médios comerciantes na pandemia já atende a sete estados.</p>
-                </a>
-            </li><li class="item">
-                <a href="https://www.letras.mus.br/blog/lives-da-semana/">
-                    <header>
-                        <img src="img/smartphone.png"/>
-                    </header>
-                    <p>Entretenimento: lives da semana - confira a agenda de shows para assistir em casa.</p>
-                </a>
-            </li><li class="item">
-                <a href="https://revistagalileu.globo.com/Tecnologia/noticia/2020/04/startups-brasileiras-desenvolvem-sistema-que-detecta-febre-distancia.html">
-                    <header>
-                        <img src="img/family.png"/>
-                    </header>
-                    <p>Startups brasileiras desenvolvem sistema que detecta febre a distância.</p>
-                </a>
-            </li><li class="item">
-                <a href="https://saude.abril.com.br/medicina/remedios-promissores-coronavirus-oms/">
-                    <header>
-                        <img src="img/seclusion.png"/>
-                    </header>
-                    <p>Remédios promissores contra o coronavírus são testados pela OMS.</p>
-                </a>
-            </li>
-        </ul>
-    </body>
+        <footer class="footer">
+            <div class="bio">
+                <h1>Sobre</h1>
+                <p class="myBio">Me chamo Micaías Ladgelson, tenho 19 anos e curso Bacharelado em Ciência da Computação no Instituto Federal do Ceará. Sou apaixonado por programação competitiva, algoritimos e estruturas de dados e por desenvolvimento Web tanto front-end como back-end.</p>
+            </div>
+            <img src="img/profile.jpg"/>
+        </footer>
+        </body>
 </html>
